@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: gray;
+    background-image: url(./assets/nature-minimalist-style-20.jpg);
+}
+
+.maindiv{
+    position: fixed;
+    height: 450px;
+    width: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    position: fixed;
+    width: 186px;
+    top: -10%;
+    left: 45%;
+    transform: translate(-50%,-50%);
+}
+
+li{
+    display: block;
+    height: 30px;
+    width: 300px;
+    background: transparent;
+    margin: 10px;
+    border-radius: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #4B9CD3;
+    backdrop-filter: blur(20px);
+    font-size: 18px;
+}
+
+.inpdiv{
+    position: sticky;
+    height: 30px;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 1px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.inp{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: #4B9CD3;
+    line-height: 30px;
+    width: 238px;
+    font-size: 17px;
+
+}
+
+#addBtn{
+    height: 30px;
+    width: 60px;
+    background: transparent;
+    font-size: 20px;
+    border: 2px solid white;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+    cursor: pointer;
+}
+
+input[type=checkbox] {
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 2px solid #4B9CD3;
+    cursor: pointer;
+}
+
+input[type=checkbox]::before{
+    content: "";
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+}
+
+input[type=checkbox]:checked{
+    background-color: #4B9CD3;
+}
+
+.check{
+    filter: grayscale(100%);
+}
+
+.material-symbols-outlined{
+    cursor: pointer;
+}
+
+
+li {
+    transition: opacity 0.4s ease, transform 0.3s ease;
+}
+
+li.adding {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+li.removing {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+input[type=checkbox] {
+    transition: background-color 0.3s ease;
+}
+
+
+ul{
+    overflow-y: auto;
+    list-style-type: none;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-track{
+    background: white;
+    border-radius: 10px;
+    opacity: 0.5;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #4B9CD3;
+    border-radius: 10px;
+}
+
